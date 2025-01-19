@@ -1,0 +1,38 @@
+<!-- Shift + !, then tab  for html template -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+
+    <!-- Link your JavaScript file -->
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrubHubClone</title>
+
+</head>
+<body>
+    <section>
+        <div class="login">
+            <h1>Welcome To The GrubHubClone!</h1>
+
+            <h3>User Login</h3>
+            <!-- Corrected the form element and its attributes -->
+            <form id="my_form" onsubmit="validationForm(event)">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <!-- Fixed the input submit button -->
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
+
