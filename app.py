@@ -6,6 +6,10 @@ app = Flask(__name__)
 def main_page():
     return render_template("login.html")
 
+@app.route("/home")
+def home_page():
+    return render_template("home.html")
+
 # @app.route("/menu")
 # def render_menu():
 #     return "<ul> <li> Coffee </li> <li> Tea </li> </ul>"

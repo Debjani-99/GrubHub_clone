@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Link your css file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+
+     <!-- Link your JavaScript file -->
+     <script src="{{ url_for('static', filename='js/home.js') }}"></script> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home -GrubHubClone</title>
+</head>
+<body>
+    <!-- Search bar -->
+     <section class="search_bar">
+        <input type="text" class="search_field" placeholder="Search for food, convenience, alcohol..." 
+        aria-label="search">
+        <button class="search_btn">Search</button>
+     </section>
+</body>
+</html>
